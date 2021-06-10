@@ -16,9 +16,9 @@
         1. < , <= , > , >= , !==   对应为： $lt(less than) $lte(less than eq) $gt(great than) $gte $ne(not eq)     
             举例：db.集合名.find({age:{$gte:20}}),年龄是大于等于20的
         2.逻辑或：使用$in 或 $or
-            查找年龄为18或20的学生
-            举例：db.students.find({age:{$in:[18,20]}})
-            举例：db.students.find({$or:[{age:18},{age:20}]})
+            查找年龄为18或20的学生 满足其中一个字段的元素数据
+            举例：db.students.find({age:{$in:[18,20]}}) 
+            举例：db.students.find({$or:[{age:18},{age:20}]}) 
         3.逻辑非：$ne
         4.正则匹配：
             举例：db.students.find({name:/^T/})
