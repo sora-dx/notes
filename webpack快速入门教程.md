@@ -417,7 +417,7 @@
   
 - 运行指令
   - npm run build
-  - serve -s dist
+  - serve -s build
   
   **问题: **
   
