@@ -390,7 +390,19 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 createStore(reducer, initialState, composeWithDevTools(applyMiddleWare(logger)))
 ```
 
+如何判断当前环境是生产环境还是开发环境
 
+**export** **default** createStore(
+
+ reducer,
+
+ process.env.*NOD_ENV* === 'development'
+
+  ? composeWithDevTools(applyMiddleware(thunk))
+
+  : applyMiddleware(thunk)
+
+)
 
 ## combineReducers
 
