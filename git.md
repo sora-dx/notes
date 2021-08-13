@@ -24,7 +24,7 @@ git clone xxx
 - 克隆下来只有master分支代码
 
 2. 拉取其他分支代码
-- git fetch origin xxx:xxx 拉取远程仓库xxx分支到本地仓库xxx分支（如果本地xxx分支不存在，会自动创建）
+- git fetch  xxx:xxx 拉取远程仓库xxx分支到本地仓库xxx分支（如果本地xxx分支不存在，会自动创建）
 - git checkout xxx 切换到xxx分支
 
 4.远程仓库更新拉取代码
