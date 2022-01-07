@@ -34,7 +34,25 @@
 
 ​    4. 后面再推送： git push
 
-​    5. 要将dev分支也推送到远程仓库： git push origin dev
+    5. 要将dev分支也推送到远程仓库： git push origin dev
+
+
+
+#### 拉取别人远程仓库代码
+
+1. 克隆仓库
+   git clone xxx
+   注意：
+
+- 使用https方式
+- 克隆下来只有master分支代码
+
+2. 拉取其他分支代码
+
+- git fetch  origin xxx:xxx 拉取远程仓库xxx分支到本地仓库xxx分支（如果本地xxx分支不存在，会自动创建）
+- git checkout xxx 切换到xxx分支
+
+4.远程仓库更新拉取代码
 
 ​    **分支管理**：
 
@@ -59,3 +77,11 @@
 ​      后面远程仓库更新了,项拉取最新的代码
 
 ​      git pull 
+
+##### 修改git用户名和邮箱
+
+   	git config --global user.name 用户名
+
+​	   git config --global user.email  邮箱
+
+​		
